@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agewell-ai"
+version = "0.2.0"
+description = "Missingness-Aware and Uncertainty-Calibrated Machine Learning for Predicting Functional Decline in Older Adults"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Avartan", email = "avartan.research@example.com"}
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "pyyaml>=6.0",
+    "pytest>=7.3.0",
+    "streamlit>=1.28.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
