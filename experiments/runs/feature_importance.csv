@@ -1,0 +1,23 @@
+feature,feature_category,importance_mean,importance_std
+gait_speed_mps,Substantive Clinical/Survey,0.02804,0.01707
+self_rated_health,Substantive Clinical/Survey,0.02766,0.01544
+delayed_recall_score,Substantive Clinical/Survey,0.02265,0.00507
+grip_strength_kg,Substantive Clinical/Survey,0.00747,0.00922
+cesd_depression_score,Substantive Clinical/Survey,0.00546,0.00346
+age,Substantive Clinical/Survey,0.00353,0.0022
+bmi,Substantive Clinical/Survey,0.00242,0.00181
+social_participation_score_is_missing,Missingness Indicator,0.00202,0.0008
+chronic_conditions_count,Substantive Clinical/Survey,0.00195,0.00202
+cesd_depression_score_is_missing,Missingness Indicator,0.0019,0.00106
+female,Substantive Clinical/Survey,0.00169,0.00123
+household_income_log,Substantive Clinical/Survey,0.00115,0.00159
+delayed_recall_score_is_missing,Missingness Indicator,0.00109,0.00248
+gait_speed_mps_is_missing,Missingness Indicator,0.00078,0.00424
+prior_falls_count,Substantive Clinical/Survey,0.00053,0.00098
+bmi_is_missing,Missingness Indicator,0.0,0.0
+household_income_log_is_missing,Missingness Indicator,-3e-05,0.00029
+grip_strength_kg_is_missing,Missingness Indicator,-0.00012,0.00102
+education_years,Substantive Clinical/Survey,-0.0006,0.00212
+living_alone,Substantive Clinical/Survey,-0.00094,0.00078
+baseline_iadl_count,Substantive Clinical/Survey,-0.00108,0.00301
+social_participation_score,Substantive Clinical/Survey,-0.00167,0.00524

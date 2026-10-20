@@ -1,0 +1,96 @@
+{
+  "project": "AgeWell-AI",
+  "version": "0.2.0",
+  "synthetic_benchmark": true,
+  "synthetic_disclaimer": "All metrics in this run derive from the synthetic HRS/JAGES-harmonized benchmark generator and represent reproducible pipeline verification, NOT clinical evidence from real human patients.",
+  "timestamp_utc": "2026-10-20T17:29:49.000116+00:00",
+  "random_seed": 42,
+  "environment": {
+    "python_version": "3.11.2",
+    "scipy_version": "1.15.2",
+    "pandas_version": "2.2.3",
+    "numpy_version": "2.1.3"
+  },
+  "schema_validation": {
+    "is_valid": true,
+    "dataset_sha256": "f8180c83baf3fa39",
+    "raw_rows": 8000,
+    "raw_participants": 2000
+  },
+  "cohort_flow": {
+    "total_raw_records": 8000,
+    "total_raw_participants": 2000,
+    "wave_pairs_constructed": 6000,
+    "excluded_under_age": 139,
+    "excluded_baseline_adl_impaired": 1969,
+    "excluded_missing_followup": 0,
+    "final_eligible_observations": 3892,
+    "final_unique_participants": 1734,
+    "positive_outcome_count": 1054,
+    "positive_outcome_prevalence": 0.2708
+  },
+  "primary_comparison_95ci": {
+    "conventional_logreg_baseline": {
+      "auroc": {
+        "estimate": 0.7468,
+        "ci_lower_95": 0.6855,
+        "ci_upper_95": 0.8066
+      },
+      "auprc": {
+        "estimate": 0.5454,
+        "ci_lower_95": 0.4416,
+        "ci_upper_95": 0.6501
+      },
+      "brier": {
+        "estimate": 0.2057,
+        "ci_lower_95": 0.1881,
+        "ci_upper_95": 0.2312
+      },
+      "ece": {
+        "estimate": 0.1653,
+        "ci_lower_95": 0.1247,
+        "ci_upper_95": 0.2093
+      },
+      "sens_at_top20pct": {
+        "estimate": 0.4286,
+        "ci_lower_95": 0.3292,
+        "ci_upper_95": 0.4782
+      }
+    },
+    "proposed_missing_aware_calibrated_rf": {
+      "auroc": {
+        "estimate": 0.744,
+        "ci_lower_95": 0.6771,
+        "ci_upper_95": 0.7963
+      },
+      "auprc": {
+        "estimate": 0.5682,
+        "ci_lower_95": 0.4582,
+        "ci_upper_95": 0.669
+      },
+      "brier": {
+        "estimate": 0.177,
+        "ci_lower_95": 0.1596,
+        "ci_upper_95": 0.1995
+      },
+      "ece": {
+        "estimate": 0.0505,
+        "ci_lower_95": 0.037,
+        "ci_upper_95": 0.1063
+      },
+      "sens_at_top20pct": {
+        "estimate": 0.4048,
+        "ci_lower_95": 0.3125,
+        "ci_upper_95": 0.4764
+      }
+    }
+  },
+  "generated_figures": [
+    "fig1_missingness_profile_and_h1.png",
+    "fig2_calibration_reliability_h2.png",
+    "fig3_leakage_split_comparison_h3.png",
+    "fig4_selective_abstention_h4.png",
+    "fig5_feature_importance_and_subgroups.png",
+    "fig6_system_architecture_and_roadmap.png"
+  ]
+}
