@@ -105,4 +105,4 @@ PYTHONPATH=src python3 -m agewell.experiments
 # 4. Launch the read-only Streamlit inspection dashboard
 streamlit run app/dashboard.py
 ```
-# AgeWll-AI
+# AgeWell-AI
