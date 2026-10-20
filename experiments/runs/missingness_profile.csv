@@ -1,0 +1,16 @@
+feature,missing_count,missing_rate,mechanism_hypothesis
+gait_speed_mps,870,0.2235,Informative MNAR/MAR: Physical performance test often skipped when frail or unsafe
+grip_strength_kg,642,0.165,Informative MNAR/MAR: Physical performance test often skipped when frail or unsafe
+delayed_recall_score,533,0.1369,Informative MNAR/MAR: Cognitive/affective non-response or proxy interview skip
+cesd_depression_score,426,0.1095,Informative MNAR/MAR: Cognitive/affective non-response or proxy interview skip
+social_participation_score,378,0.0971,Survey MAR/MNAR: Socioeconomic or social module item non-response
+household_income_log,362,0.093,Survey MAR/MNAR: Socioeconomic or social module item non-response
+bmi,176,0.0452,Low/sporadic item non-response (MCAR/MAR)
+chronic_conditions_count,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+self_rated_health,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+baseline_iadl_count,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+education_years,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+living_alone,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+female,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+age,0,0.0,Low/sporadic item non-response (MCAR/MAR)
+prior_falls_count,0,0.0,Low/sporadic item non-response (MCAR/MAR)
