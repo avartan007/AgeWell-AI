@@ -1,0 +1,15 @@
+experiments:
+  h1_missingness_mechanisms:
+    mechanisms: ["natural_mar_mnar", "simulated_mcar", "simulated_mar", "simulated_mnar"]
+    extra_missing_rates: [0.0, 0.10, 0.20, 0.30, 0.40]
+    imputation_strategies: ["median_only", "median_plus_indicators"]
+  h2_calibration_methods:
+    methods: ["uncalibrated", "sigmoid", "isotonic"]
+    ece_bins: 10
+  h3_split_comparison:
+    splits: ["naive_row_random_leaky", "participant_grouped_random", "participant_grouped_temporal"]
+  h4_selective_abstention:
+    coverage_targets: [1.0, 0.90, 0.85, 0.80, 0.75, 0.70, 0.60]
+    alert_budget_top_k: 0.20
+  subgroup_audit:
+    stratify_by: ["age_bracket", "sex", "living_alone"]

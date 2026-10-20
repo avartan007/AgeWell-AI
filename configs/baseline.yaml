@@ -1,0 +1,31 @@
+project_name: "AgeWell-AI"
+version: "0.2.0"
+random_seed: 42
+dataset:
+  source_type: "synthetic_hrs_jages_harmonized_benchmark"
+  n_participants: 3200
+  waves: [1, 2, 3, 4]
+  min_baseline_age: 65
+  exclude_baseline_adl_impaired: true
+  outcome_column: "future_adl_decline"
+split:
+  strategy: "participant_grouped_temporal"
+  train_waves: [1, 2]
+  val_wave: 2
+  test_wave: 3
+  val_participant_fraction: 0.25
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+  random_forest:
+    n_estimators: 250
+    max_depth: 8
+    min_samples_leaf: 15
+    class_weight: "balanced_subsample"
+  hist_gradient_boosting:
+    max_iter: 200
+    max_depth: 5
+    learning_rate: 0.05
+    min_samples_leaf: 20
