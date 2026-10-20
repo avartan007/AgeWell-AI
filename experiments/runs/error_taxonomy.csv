@@ -1,0 +1,5 @@
+outcome_group,count,mean_predicted_prob,mean_age,mean_self_rated_health,mean_prior_falls,mean_missing_features
+False Negative (Missed Decline),28,0.182,77.536,2.679,0.393,0.143
+False Positive (False Alert),69,0.393,80.58,3.435,0.507,0.536
+True Negative (Stable),131,0.13,75.687,2.336,0.29,0.046
+True Positive (Detected Decline),56,0.452,81.821,3.696,0.536,0.786
