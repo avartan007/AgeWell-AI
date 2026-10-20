@@ -1,0 +1,4 @@
+split_strategy,has_participant_leakage,train_n,test_n,auroc,auprc,brier,log_loss,ece,cal_intercept,cal_slope,sens_at_top20pct,prevalence,n_samples
+naive_row_random_leaky,True,2336,973,0.7387,0.5356,0.2356,0.6589,0.2515,-1.3156,1.0768,0.4229,0.26,973
+participant_grouped_random,False,2202,966,0.7716,0.5863,0.2254,0.6391,0.2384,-1.3608,1.5077,0.4094,0.2857,966
+participant_grouped_temporal,False,1532,284,0.744,0.5682,0.222,0.6289,0.2055,-1.0723,1.1097,0.4048,0.2958,284
